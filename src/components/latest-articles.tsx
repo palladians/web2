@@ -10,7 +10,7 @@ const BLOG_POSTS = [
 
 export const LatestArticles = () => {
   return (
-    <div className="border-t py-24 w-full">
+    <section id="blog" className="border-t py-24 w-full snap-start">
       <div className="container flex flex-col flex-1 gap-16 relative">
         <NextImage src="/blog.png" width={600} height={300} alt="Blog" className="absolute top-24 lg:top-8 left-1/2 transform -translate-x-1/2" />
         <div className="flex items-center justify-start lg:justify-center mt-8 relative">
@@ -31,6 +31,6 @@ export const LatestArticles = () => {
           <Button variant="secondary" size="lg">See more</Button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

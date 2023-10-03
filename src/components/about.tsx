@@ -9,7 +9,7 @@ const ABOUT_CARDS = [
 
 export const About = () => {
   return (
-    <div className="flex flex-col container gap-16 relative py-16">
+    <section id="about" className="flex flex-col container gap-16 relative py-16 snap-start">
       <NextImage src="/about.png" width={800} height={400} alt="About" className="absolute top-24 lg:top-16 left-1/2 transform -translate-x-1/2" />
       <div className="flex items-center justify-start lg:justify-center mt-8 relative">
         <h2 className="text-5xl font-semibold">About</h2>
@@ -19,6 +19,6 @@ export const About = () => {
           <AboutCard key={i} iconSrc={card.iconSrc} title={card.title} content={card.content} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

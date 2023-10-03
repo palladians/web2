@@ -1,8 +1,9 @@
 import NextImage from 'next/image'
+import HeroAddon from '../../public/hero-addon.png'
 
 export const Hero = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 py-24 relative overflow-hidden">
+    <section className="grid grid-cols-1 lg:grid-cols-2 py-24 relative overflow-hidden snap-start">
       <div className="hidden lg:flex absolute w-16 h-[32rem] bg-indigo-300 -right-[8rem] -bottom-[4rem] blur-[10rem]" />
       <div className="relative flex items-center">
         <NextImage src="/signet.svg" width={800} height={600} alt="Signet" className="absolute" />
@@ -12,7 +13,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="hidden lg:flex justify-center items-center relative">
-        <NextImage src="/hero-addon.png" width={500} height={500} alt="Hero Addon" />
+        <NextImage src={HeroAddon} width={500} height={500} alt="Hero Addon" placeholder="blur" />
       </div>
     </section>
   )

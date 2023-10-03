@@ -9,6 +9,7 @@ export default function Home() {
     <main className="flex flex-col gap-24">
       <Hero />
       <About />
+      <div id="products" />
       <ProductShowcase title="Pallad" description="Pallad is a unique Web3 wallet for Mina protocol and zkEVMs. It follows W3C standards for Verifiable Credentials and will soon enable efficient zkApps delivery. The wallet is the result of our combined experience in application development and modern fintech." imgSrc="/pallad.png" />
       <ProductShowcase title="Minaverse" description="Minaverse is a powerful blockchain explorer that helps you understand and interact with the Mina blockchain. With its user-friendly interface and rich data visualizations, Minaverse is the perfect tool for anyone who wants to learn more about or use the Mina ecosystem." imgSrc="/pallad.png" />
       <Cta />
