@@ -5,7 +5,7 @@ import { Schibsted_Grotesk } from 'next/font/google'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
-const schibsted = Schibsted_Grotesk({ subsets: ['latin'] })
+const grotesk = Schibsted_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Palladians',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={schibsted.className}>
+      <body className={grotesk.className}>
         <Navbar />
         <Providers>
           {children}
