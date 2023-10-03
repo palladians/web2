@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="23.896" height="22.365" viewBox="0 0 23.896 22.365">
-  <g id="twitter-x" transform="translate(-536.33 -331.731)">
-    <g id="layer1" transform="translate(536.33 331.731)">
-      <path id="path1009" d="M484,356.79l9.226,12.336-9.284,10.03h2.09l8.128-8.781,6.567,8.781h7.111l-9.745-13.03,8.642-9.336h-2.09l-7.486,8.087-6.048-8.087Zm3.073,1.539h3.267l14.425,19.287H501.5Z" transform="translate(-483.94 -356.79)" fill="#fff"/>
-    </g>
-  </g>
-</svg>
+<svg height="22.365" viewBox="0 0 23.896 22.365" width="23.896" xmlns="http://www.w3.org/2000/svg"><path d="m484 356.79 9.226 12.336-9.284 10.03h2.09l8.128-8.781 6.567 8.781h7.111l-9.745-13.03 8.642-9.336h-2.09l-7.486 8.087-6.048-8.087zm3.073 1.539h3.267l14.425 19.287h-3.265z" fill="#fff" transform="translate(-483.94 -356.79)"/></svg>
