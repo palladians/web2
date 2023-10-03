@@ -12,13 +12,13 @@ export const Navbar = () => {
         </NextLink>
         <div className="hidden items-center gap-4 lg:flex">
           <Button variant="secondary" asChild>
-            <a href="#about">About</a>
+            <NextLink href="/#about">About</NextLink>
           </Button>
           <Button variant="secondary" asChild>
-            <a href="#products">Products</a>
+            <NextLink href="/#products">Products</NextLink>
           </Button>
           <Button variant="secondary" asChild>
-            <a href="#blog">Blog</a>
+            <NextLink href="/#blog">Blog</NextLink>
           </Button>
           <Button>Contact</Button>
         </div>
