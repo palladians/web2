@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46.006" viewBox="0 0 46 46.006">
+  <defs>
+    <filter id="ico_top">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-color="#c4c7ff" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <path id="ico_top-2" data-name="ico top" d="M47.878,18.514a2.3,2.3,0,0,0-2-1.555L32.77,15.918,27.1,3.357a2.3,2.3,0,0,0-4.191,0L17.231,15.918,4.118,16.959A2.3,2.3,0,0,0,2.695,20.9l9.69,9.446L8.958,45.185a2.3,2.3,0,0,0,3.519,2.431L25,39.267l12.524,8.349a2.3,2.3,0,0,0,3.489-2.544l-4.207-14.72,10.433-9.389a2.3,2.3,0,0,0,.639-2.45Z" transform="translate(-2 -1.998)" fill="#737aef"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#ico_top)">
+      <path id="ico_top-3" data-name="ico top" d="M47.878,18.514a2.3,2.3,0,0,0-2-1.555L32.77,15.918,27.1,3.357a2.3,2.3,0,0,0-4.191,0L17.231,15.918,4.118,16.959A2.3,2.3,0,0,0,2.695,20.9l9.69,9.446L8.958,45.185a2.3,2.3,0,0,0,3.519,2.431L25,39.267l12.524,8.349a2.3,2.3,0,0,0,3.489-2.544l-4.207-14.72,10.433-9.389a2.3,2.3,0,0,0,.639-2.45Z" transform="translate(-2 -2)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

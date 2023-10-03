@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.222" height="44.535" viewBox="0 0 40.222 44.535">
+  <defs>
+    <filter id="ico_sec" x="0" y="0" width="40.222" height="44.535" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-color="#c4c7ff" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <path id="ico_sec-2" data-name="ico sec" d="M41.943,11.144,24.191,2.237a2.22,2.22,0,0,0-1.993,0L4.326,11.139a2.233,2.233,0,0,0-1.211,1.708c-.029.216-2.549,21.689,19.017,33.416a2.215,2.215,0,0,0,2.158-.02C45.011,34.534,43.246,13.8,43.161,12.918a2.227,2.227,0,0,0-1.218-1.775Z" transform="translate(-3.01 -1.999)" fill="#737aef"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#ico_sec)">
+      <path id="ico_sec-3" data-name="ico sec" d="M41.943,11.144,24.191,2.237a2.22,2.22,0,0,0-1.993,0L4.326,11.139a2.233,2.233,0,0,0-1.211,1.708c-.029.216-2.549,21.689,19.017,33.416a2.215,2.215,0,0,0,2.158-.02C45.011,34.534,43.246,13.8,43.161,12.918a2.227,2.227,0,0,0-1.218-1.775Z" transform="translate(-3.01 -2)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
