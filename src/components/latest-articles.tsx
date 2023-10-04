@@ -1,14 +1,11 @@
+import NextLink from 'next/link'
 import { Button } from '@/components/ui/button'
 import NextImage from 'next/image'
-import { format } from 'date-fns'
+import { getBlogPosts } from '@/api/getBlogPosts'
+import { ArticleCard } from './article-card'
 
-const BLOG_POSTS = [
-  { date: '2023-10-10', title: 'Pellentesque mattis sed sapien eu aliquet. Nunc congue varius nisl sed placerat.', coverSrc: '/blog-cover.jpeg' },
-  { date: '2023-10-10', title: 'Pellentesque mattis sed sapien eu aliquet. Nunc congue varius nisl sed placerat.', coverSrc: '/blog-cover.jpeg' },
-  { date: '2023-10-10', title: 'Pellentesque mattis sed sapien eu aliquet. Nunc congue varius nisl sed placerat.', coverSrc: '/blog-cover.jpeg' }
-]
-
-export const LatestArticles = () => {
+export const LatestArticles = async () => {
+  const articles = await getBlogPosts({ limit: 3 })
   return (
     <section id="blog" className="border-t py-24 w-full snap-start">
       <div className="container flex flex-col flex-1 gap-16 relative">
@@ -17,18 +14,18 @@ export const LatestArticles = () => {
           <h2 className="text-5xl font-semibold">Latest <span className="text-primary">Articles</span></h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
-          {BLOG_POSTS.map((blogPost, i) => (
-            <div key={i} className="flex flex-col gap-8">
-              <NextImage src={blogPost.coverSrc} width={600} height={300} alt="Blog" className="rounded-[1rem] shadow-xl shadow-indigo-500/5" />
-              <div className="flex flex-col px-8 gap-4">
-                <p className="text-primary font-semibold">{format(new Date(blogPost.date), 'dd.mm.yyyy')}</p>
-                <h3 className="text-2xl leading-[2.5rem]">{blogPost.title}</h3>
-              </div>
-            </div>
+          {articles.map((article, i) => (
+            <NextLink key={i} href={`/blog/${article.slug}`}>
+              <ArticleCard coverImageId={article.cover_image.id} datePublished={article.date_published} title={article.title} />
+            </NextLink>
           ))}
         </div>
         <div className="flex justify-start lg:justify-center items-center">
-          <Button variant="secondary" size="lg">See more</Button>
+          <Button variant="secondary" size="lg" asChild>
+            <NextLink href="/blog">
+              See more
+            </NextLink>
+          </Button>
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ export const ProductShowcase = ({ title, description, imgSrc }: Record<string, s
         <p className="leading-8 text-muted-foreground text-lg">{description}</p>
       </div>
       <div className="flex items-center justify-center">
-        <NextImage src={imgSrc} width={645} height={489} alt={title} />
+        <NextImage src={imgSrc} width={645} height={489} alt={title} className="rounded-[1rem]" />
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ import { Hero } from '@/components/hero'
 import { LatestArticles } from '@/components/latest-articles'
 import { ProductShowcase } from '@/components/product-showcase'
 
-export default function Home() {
+const HomePage = () => {
   return (
     <main className="flex flex-col gap-24">
       <Hero />
@@ -18,3 +18,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default HomePage

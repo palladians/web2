@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import { Button } from "@/components/ui/button"
 import NextImage from 'next/image'
 
@@ -18,7 +19,11 @@ export const Cta = () => {
               Book Call
             </a>
           </Button>
-          {/* <Button variant="secondary" size="lg">About us</Button> */}
+          <Button variant="secondary" size="lg" asChild>
+            <NextLink href="/blog">
+              See Articles
+            </NextLink>
+          </Button>
         </div>
       </div>
     </section>

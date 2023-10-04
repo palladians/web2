@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Schibsted_Grotesk } from 'next/font/google'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { cn } from '@/lib/utils'
 
 const grotesk = Schibsted_Grotesk({ subsets: ['latin'] })
 
@@ -19,10 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={grotesk.className}>
+      <body className={cn(grotesk.className, 'flex flex-col min-h-screen')}>
         <Navbar />
         <Providers>
-          {children}
+          <div className="flex-1">
+            {children}
+          </div>
         </Providers>
         <Footer />
       </body>
