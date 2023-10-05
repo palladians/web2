@@ -1,6 +1,6 @@
 import { env } from './src/env.mjs'
 
-const CMS_PROXY = `${env.NEXT_PUBLIC_CMS_URL}/:path*`
+const LEADS_URL = `${env.NEXT_PUBLIC_CMS_URL}/items/leads`
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,8 +12,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/cms/:path*',
-        destination: CMS_PROXY,
+        source: '/cms/leads',
+        destination: LEADS_URL,
       },
     ]
   },

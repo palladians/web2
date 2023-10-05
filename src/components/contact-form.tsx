@@ -1,5 +1,6 @@
 'use client'
 
+import NextLink from 'next/link'
 import { useState } from 'react'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -24,7 +25,11 @@ export const ContactForm = () => {
           <p className="text-lg">We received your message. We will get back to you soon.</p>
         </div>
         <div>
-          <Button>Go to Home Page</Button>
+          <Button asChild>
+            <NextLink href="/">
+              Go to Home Page
+            </NextLink>
+          </Button>
         </div>
       </div>
     ) : (
