@@ -25,3 +25,10 @@ export type BlogPost = {
   title: string
   cover_image: Asset
 }
+
+export type Page = {
+  id: number
+  slug: string
+  name: string
+  content: string
+}

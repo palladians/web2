@@ -71,8 +71,8 @@ export const Footer = () => {
       </div>
       <div className="container flex flex-col lg:flex-row justify-center gap-8 relative">
         <p>© 2023 Palladians</p>
-        <NextLink href="/">Privacy Policy</NextLink>
-        <NextLink href="/">Terms of Service</NextLink>
+        <NextLink href="/privacy">Privacy Policy</NextLink>
+        <NextLink href="/terms">Terms of Service</NextLink>
       </div>
     </footer>
   )
