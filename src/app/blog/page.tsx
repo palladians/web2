@@ -1,10 +1,22 @@
+import { Metadata } from 'next'
 import NextLink from 'next/link'
 import { Input } from "@/components/ui/input"
 import { getBlogPosts } from '@/api/getBlogPosts'
 import { ArticleCard } from '@/components/article-card'
 import { readingTime } from 'reading-time-estimator'
 
-const BlogIndexPage = async ({ searchParams }: { searchParams: { search: string } }) => {
+type BlogIndexPageProps = { searchParams: { search: string } }
+
+export const metadata: Metadata = {
+  title: 'Blog \\ Palladians',
+  description: 'Curated articles on design, development, business, and Web3 created by Palladians.',
+  openGraph: {
+    title: 'Blog \\ Palladians',
+    description: 'Curated articles on design, development, business, and Web3 created by Palladians.',
+  }
+}
+
+const BlogIndexPage = async ({ searchParams }: BlogIndexPageProps) => {
   const articles = await getBlogPosts({ limit: 20, search: searchParams.search })
   return (
     <div className="flex flex-col gap-16 container max-w-[56rem] py-24">

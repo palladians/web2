@@ -14,8 +14,9 @@ export const metadata: Metadata = {
   description: 'We are a software development collective of open source enthusiasts. Our main mission is to enrich Web3 with user-friendly experiences. We build with stable tools and research cutting-edge technology.',
   keywords: 'Software Development, Open Source, Software Company, TypeScript, Web3, Blockchain, Poznan, Berlin, Mina Protocol, Smart Contracts, React, MINA, zkEVM',
   openGraph: {
-    images: 'https://palladians.xyz/og.jpg'
-  }
+    images: '/og.jpg'
+  },
+  metadataBase: new URL('https://palladians.xyz')
 }
 
 export default function RootLayout({

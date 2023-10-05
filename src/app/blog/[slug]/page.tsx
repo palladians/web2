@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import { getBlogPost } from "@/api/getBlogPost"
 import ReactMarkdown from 'react-markdown';
 import NextImage from 'next/image'
@@ -5,7 +6,23 @@ import { assetUrl } from '@/api/client'
 import { PostMeta } from "@/components/post-meta"
 import { readingTime } from 'reading-time-estimator'
 
-const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
+type BlogPostPageProps = { params: { slug: string } }
+
+export const generateMetadata = async ({ params }: BlogPostPageProps): Promise<Metadata> => {
+  const article = await getBlogPost({ slug: params.slug })
+  const coverUrl = assetUrl(article.cover_image.id)
+  return {
+    title: `${article.title} \\ Palladians`,
+    description: article.excerpt,
+    openGraph: {
+      title: `${article.title} \\ Palladians`,
+      description: article.excerpt,
+      images: coverUrl
+    }
+  }
+}
+
+const BlogPostPage = async ({ params }: BlogPostPageProps) => {
   const article = await getBlogPost({ slug: params.slug })
   const coverUrl = assetUrl(article.cover_image.id)
   const blurryUrl = encodeURI(`${coverUrl}?width=200&quality=1&transforms=[["blur",100]]`)

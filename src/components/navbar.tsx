@@ -18,7 +18,11 @@ const Buttons = ({ mobile, callback }: { mobile?: boolean; callback?: () => void
       <Button variant={mobile ? 'ghost' : 'secondary'} onClick={callback} asChild>
         <NextLink href="/blog">Blog</NextLink>
       </Button>
-      <Button onClick={callback}>Contact</Button>
+      <Button onClick={callback} asChild>
+        <NextLink href="/contact">
+          Contact
+        </NextLink>
+      </Button>
     </>
   )
 }

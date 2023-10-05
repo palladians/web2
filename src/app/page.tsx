@@ -1,8 +1,16 @@
+import { Metadata } from 'next'
 import { About } from '@/components/about'
 import { Cta } from '@/components/cta'
 import { Hero } from '@/components/hero'
 import { LatestArticles } from '@/components/latest-articles'
 import { ProductShowcase } from '@/components/product-showcase'
+
+export const metadata: Metadata = {
+  title: 'You and the Web3 \\ Palladians',
+  openGraph: {
+    title: 'You and the Web3 \\ Palladians'
+  }
+}
 
 const HomePage = () => {
   return (

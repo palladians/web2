@@ -20,6 +20,7 @@ export type BlogPost = {
   user_updated: string
   date_updated: string
   content: string
+  excerpt: string
   date_published: string
   author: Author
   title: string
@@ -31,4 +32,10 @@ export type Page = {
   slug: string
   name: string
   content: string
+}
+
+export type Lead = {
+  email: string
+  phoneNumber?: string
+  message: string
 }
