@@ -20,8 +20,8 @@ export const Cta = () => {
             </a>
           </Button>
           <Button variant="secondary" size="lg" asChild>
-            <NextLink href="/blog">
-              See Articles
+            <NextLink href="/contact">
+              Contact us
             </NextLink>
           </Button>
         </div>

@@ -10,10 +10,10 @@ const Buttons = ({ mobile, callback }: { mobile?: boolean; callback?: () => void
   return (
     <>
       <Button variant={mobile ? 'ghost' : 'secondary'} onClick={callback} asChild>
-        <NextLink href="/#about">About</NextLink>
+        <a href="/#about">About</a>
       </Button>
       <Button variant={mobile ? 'ghost' : 'secondary'} onClick={callback} asChild>
-        <NextLink href="/#products">Products</NextLink>
+        <a href="/#products">Products</a>
       </Button>
       <Button variant={mobile ? 'ghost' : 'secondary'} onClick={callback} asChild>
         <NextLink href="/blog">Blog</NextLink>

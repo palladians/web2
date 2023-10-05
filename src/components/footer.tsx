@@ -55,8 +55,8 @@ export const Footer = () => {
         <div className="flex flex-col gap-4">
           <h4 className="text-xl">Collective</h4>
           <div className="flex flex-col gap-4 mt-2">
-            <NextLink href="/#about" className="text-muted-foreground">About</NextLink>
-            <NextLink href="/#products" className="text-muted-foreground">Products</NextLink>
+            <a href="/#about" className="text-muted-foreground">About</a>
+            <a href="/#products" className="text-muted-foreground">Products</a>
             <NextLink href="/blog" className="text-muted-foreground">Blog</NextLink>
           </div>
         </div>
