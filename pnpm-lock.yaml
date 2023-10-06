@@ -131,6 +131,9 @@ dependencies:
   react-markdown:
     specifier: ^9.0.0
     version: 9.0.0(@types/react@18.2.24)(react@18.2.0)
+  react-scroll-parallax:
+    specifier: ^3.4.2
+    version: 3.4.2(react-dom@18.2.0)(react@18.2.0)
   reading-time-estimator:
     specifier: ^1.9.0
     version: 1.9.0
@@ -2160,6 +2163,10 @@ packages:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
     dev: false
 
+  /bezier-easing@2.1.0:
+    resolution: {integrity: sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==}
+    dev: false
+
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
@@ -3945,6 +3952,13 @@ packages:
       p-limit: 3.1.0
     dev: true
 
+  /parallax-controller@1.7.0:
+    resolution: {integrity: sha512-tIU/LgH9oIrvC6o+rvGQis8/NXxsHNuF5LODmcc5TjvEDUi2qiR/iisFmyaqI9LImQ3psdAv28k2ZEAnFekiig==}
+    engines: {node: '>=12'}
+    dependencies:
+      bezier-easing: 2.1.0
+    dev: false
+
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -4233,6 +4247,18 @@ packages:
       tslib: 2.6.2
       use-callback-ref: 1.3.0(@types/react@18.2.24)(react@18.2.0)
       use-sidecar: 1.1.2(@types/react@18.2.24)(react@18.2.0)
+    dev: false
+
+  /react-scroll-parallax@3.4.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-jNltdM1a6y2TRHW4X4nyNT9BAzbLoISTvXaoB9YKGudVcAsGWManMI6UZ6PMd2si6bbWtTROgF/A9IoplZ2OLA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+      react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+    dependencies:
+      parallax-controller: 1.7.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-style-singleton@2.2.1(@types/react@18.2.24)(react@18.2.0):

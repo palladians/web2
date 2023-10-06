@@ -18,7 +18,12 @@ export const generateMetadata = async ({ params }: BlogPostPageProps): Promise<M
       title: `${article.title} \\ Palladians`,
       description: article.excerpt,
       images: coverUrl
-    }
+    },
+    twitter: {
+      title: `${article.title} \\ Palladians`,
+      description: article.excerpt,
+      images: [coverUrl],
+    },
   }
 }
 
