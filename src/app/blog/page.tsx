@@ -17,7 +17,8 @@ export const metadata: Metadata = {
 }
 
 const BlogIndexPage = async ({ searchParams }: BlogIndexPageProps) => {
-  const articles = await getBlogPosts({ limit: 20, search: searchParams.search })
+  const query = searchParams?.search || ''
+  const articles = await getBlogPosts({ limit: 20, search: query })
   return (
     <div className="flex flex-col gap-16 container max-w-[56rem] py-24">
       <h1 className="text-5xl font-semibold">Blog</h1>
