@@ -13,7 +13,7 @@ export const getBlogPosts = ({ limit, search }: GetBlogPostsProps) => {
       fields: ["*.*"],
       limit,
       sort: "-date_published",
-      search,
+      search: search ?? "",
     }),
   );
 };
