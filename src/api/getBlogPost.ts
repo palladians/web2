@@ -8,7 +8,10 @@ type GetBlogPostProps = {
 
 export const getBlogPost = async ({ slug }: GetBlogPostProps) => {
   const matching = await client.request<BlogPost[]>(
-    readItems("blog_posts", { filter: { slug }, fields: ["*.*"] }),
+    readItems("blog_posts" as any, {
+      filter: { slug: slug as any },
+      fields: ["*.*"],
+    }),
   );
   return matching[0];
 };
