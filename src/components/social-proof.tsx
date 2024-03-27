@@ -4,7 +4,7 @@ export const SocialProof = () => {
   return (
     <section className="container flex flex-col items-start justify-center gap-16 lg:items-center">
       <div className="align-left lg:align-center text-lg text-muted-foreground">
-        We cooperate with top brands like
+        We work with top brands such as
       </div>
       <div className="flex flex-col items-start justify-center gap-24 lg:flex-row lg:items-center">
         <a
