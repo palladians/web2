@@ -39,7 +39,6 @@ const HomePage = () => {
         description="Most of the code we ship is open source and available for review. We believe that creating open source solutions helps foster innovation and creates opportunities to further involve the community in the development process."
         imgSrc="/herald.jpg"
       />
-      <LatestArticles />
     </main>
   );
 };

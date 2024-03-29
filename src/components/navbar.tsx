@@ -29,13 +29,6 @@ const Buttons = ({
       >
         <a href="/#products">Products</a>
       </Button>
-      <Button
-        variant={mobile ? "ghost" : "secondary"}
-        onClick={callback}
-        asChild
-      >
-        <NextLink href="/blog">Blog</NextLink>
-      </Button>
       <Button onClick={callback} asChild>
         <NextLink href="mailto:team@palladians.xyz">Contact</NextLink>
       </Button>
@@ -46,7 +39,7 @@ const Buttons = ({
 export const Navbar = () => {
   const [mobileExpanded, setMobileExpanded] = useState(false);
   return (
-    <nav className="bg-background sticky left-0 right-0 top-0 z-10 py-4">
+    <nav className="sticky left-0 right-0 top-0 z-10 bg-background py-4">
       <div className="container flex items-center justify-between">
         <NextLink href="/" onClick={() => setMobileExpanded(false)}>
           <NextImage
